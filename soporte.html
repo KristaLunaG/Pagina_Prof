@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Tecnologías - Soporte y Consultoría</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('fondo3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="text-container">
+            <h1>Servicios ChimiChai Wasai</h1>
+            <p>Ofrecemos soluciones tecnológicas avanzadas para tu negocio</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">IaaS y SaaS</a></li>
+            <li><a href="soporte.html">Soporte y Consultoría</a></li>
+            <li><a href="reservas.html">Reserva</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="soporte" class="service-card">
+            <h2>Soporte Técnico</h2>
+            <p>Mantén tus sistemas operativos con soporte especializado y continuo.</p>
+            <p class="price-info">Precio: Desde $300 USD/mes para soporte 24/7 de Nivel 1, $50 - $200 USD por hora para Nivel 3.</p>
+        </section>
+        
+        <section id="consultoria" class="service-card">
+            <h2>Consultoría en TI</h2>
+            <p>Recibe asesoría experta en la implementación de tecnología.</p>
+            <p class="price-info">Precio: $100 - $300 USD por hora o por proyecto según necesidades.</p>
+        </section>
+    </div>
+
+    <div id="descripcion">
+        <section id="desc-card">
+            <p>Incluye asistencia 24/7, opciones de contacto de emergencia, y tiempos de respuesta. Se detallarán las escalaciones en caso de problemas prolongados. Descripción de los servicios de asesoría, incluyendo análisis de infraestructura y recomendaciones personalizadas para la optimización de recursos.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2024 Servicios de Tecnologías. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.service-card');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

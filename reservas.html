@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Tecnologías - IaaS y SaaS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('fondo3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="text-container">
+            <h1>Servicios ChimiChai Wasai</h1>
+            <p>Ofrecemos soluciones tecnológicas avanzadas para tu negocio</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">IaaS y SaaS</a></li>
+            <li><a href="soporte.html">Soporte y Consultoría</a></li>
+            <li><a href="reservas.html">Reserva</a></li>
+        </ul>
+    </nav>
+    
+    <section id="reservas">
+        <h1>Reservas</h1>
+
+        <p>¡Reserva tu servicio en línea de manera rápida y sencilla! Completa el formulario a continuación para agendar tu cita.</p>
+        <form action="/reservas" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="servicio">Servicio Deseado:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="lavado_exterior">Servicio IaaS</option>
+                <option value="detallado_interior">Servicio SaaS</option>
+                <option value="encerado_pulido">Soporte Tecnico</option>
+                <option value="tratamiento_tapicerias">Proyecto/Consultoria</option>
+            </select>
+            
+            <label for="fecha">Fecha de la Reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <button type="submit">Reservar</button>
+        </form>
+        <p>Para cancelaciones o reprogramaciones, por favor contáctanos al menos 24 horas antes de tu cita.</p>
+    </section>
+    
+    <footer>
+        <p>© 2024 Servicios de Tecnologías. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.service-card');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

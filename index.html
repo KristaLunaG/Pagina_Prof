@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Tecnologías - IaaS y SaaS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('fondo3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="text-container">
+            <h1>Servicios ChimiChai Wasai</h1>
+            <p>Ofrecemos soluciones tecnológicas avanzadas para tu negocio</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">IaaS y SaaS</a></li>
+            <li><a href="soporte.html">Soporte y Consultoría</a></li>
+            <li><a href="reservas.html">Reserva</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="infraestructura" class="service-card">
+            <h2>Infraestructura como Servicio (IaaS)</h2>
+            <p>Escala y optimiza tus recursos en la nube con flexibilidad.</p>
+            <p class="price-info">Precio: $0.02 - $0.12 USD por GB de almacenamiento, $0.10 - $1.50 USD por hora para instancias de procesamiento.</p>
+        </section>
+        
+        <section id="saas" class="service-card">
+            <h2>Software como Servicio (SaaS)</h2>
+            <p>Accede a aplicaciones empresariales con una tarifa mensual.</p>
+            <p class="price-info">Precio: $10 - $50 USD por usuario/mes.</p>
+        </section>
+    </div>
+
+    <div id="descripcion">
+        <section id="desc-card">
+            <p>Servicios de infraestructura como servicio (IaaS) y software como servicio (SaaS), con descripciones claras sobre los niveles de servicio, características, opciones de suscripción y políticas de actualización.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2024 Servicios de Tecnologías. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.service-card');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
